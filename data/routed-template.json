@@ -1,0 +1,68 @@
+{
+  "slug": "google-antigravity/gemini-3.1-pro",
+  "display_name": "agy/gemini-3.1-pro",
+  "description": "Routed via opencodex → google-antigravity (google-antigravity).",
+  "shell_type": "unified_exec",
+  "visibility": "list",
+  "supported_in_api": true,
+  "priority": 5,
+  "base_instructions": "You are a helpful coding assistant.",
+  "web_search_tool_type": "text_and_image",
+  "supports_search_tool": true,
+  "tool_mode": "code_mode_only",
+  "supported_reasoning_levels": [
+    {
+      "effort": "low",
+      "description": "Fast responses with lighter reasoning"
+    },
+    {
+      "effort": "high",
+      "description": "Greater reasoning depth for complex problems"
+    },
+    {
+      "effort": "max",
+      "description": "Maximum reasoning depth for the hardest problems"
+    },
+    {
+      "effort": "ultra",
+      "description": "Maximum reasoning with automatic task delegation"
+    }
+  ],
+  "default_reasoning_level": "high",
+  "context_window": 1048576,
+  "max_context_window": 1048576,
+  "auto_compact_token_limit": 943718,
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "opencodex_capability_provenance": {
+    "provider": "google-antigravity",
+    "model_id": "gemini-3.1-pro",
+    "context_window": 1048576,
+    "input_modalities": [
+      "text",
+      "image"
+    ]
+  },
+  "node_repl_disabled": false,
+  "node_repl_auto_review_required": false,
+  "include_plugin_usage_instructions": false,
+  "include_apps_usage_instructions": true,
+  "supports_reasoning_summaries": false,
+  "default_reasoning_summary": "none",
+  "support_verbosity": true,
+  "default_verbosity": "low",
+  "apply_patch_tool_type": "freeform",
+  "truncation_policy": {
+    "mode": "tokens",
+    "limit": 10000
+  },
+  "supports_parallel_tool_calls": true,
+  "supports_image_detail_original": false,
+  "experimental_supported_tools": [],
+  "effective_context_window_percent": 95,
+  "comp_hash": "opencodex",
+  "multi_agent_version": "v2",
+  "auto_review_model_override": null
+}
